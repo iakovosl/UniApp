@@ -16,5 +16,15 @@ namespace UniversityApp
         {
             InitializeComponent();
         }
+
+        private void dateTimePickerHours_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddNewSchedule_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
