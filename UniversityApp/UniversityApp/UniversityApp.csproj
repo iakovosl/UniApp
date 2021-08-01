@@ -74,6 +74,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\UniversityApp.Base.Entity.datasource" />
+    <None Include="Properties\DataSources\UniversityApp.Base.Person.datasource" />
+    <None Include="Properties\DataSources\UniversityApp.Impl.Course.datasource" />
+    <None Include="Properties\DataSources\UniversityApp.Impl.Professor.datasource" />
+    <None Include="Properties\DataSources\UniversityApp.Impl.Schedule.datasource" />
+    <None Include="Properties\DataSources\UniversityApp.Impl.Student.datasource" />
+    <None Include="Properties\DataSources\UniversityApp.Impl.University.datasource" />
+    <None Include="Properties\DataSources\UniversityApp.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\UniversityApp.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -87,6 +98,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

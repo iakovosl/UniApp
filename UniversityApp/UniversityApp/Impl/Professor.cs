@@ -9,9 +9,9 @@ namespace UniversityApp.Impl
 {
    public class Professor:Person
     {
-     
         public string Rank { get; set; }
         public List<CourseCategoryEnum> CanTeach { get; set; }
+
         public Professor()
         {
 
