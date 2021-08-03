@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UniversityApp.Impl;
+using UniversityApp.WUI;
 
 namespace UniversityApp
 {
@@ -48,6 +49,12 @@ namespace UniversityApp
         {
             // Display on a grid
             University.UniversityData();
+        }
+
+        private void btnViewSchedules_Click(object sender, EventArgs e)
+        {
+            SchedulesForm schedulesform = new SchedulesForm();
+            schedulesform.Show();
         }
     }
 }

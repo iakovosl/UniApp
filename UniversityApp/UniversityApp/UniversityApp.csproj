@@ -68,6 +68,12 @@
     <Compile Include="WUI\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="WUI\SchedulesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WUI\SchedulesForm.Designer.cs">
+      <DependentUpon>SchedulesForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="WUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +89,9 @@
     </Compile>
     <EmbeddedResource Include="WUI\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WUI\SchedulesForm.resx">
+      <DependentUpon>SchedulesForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\Form1.datasource" />
     <None Include="Properties\DataSources\Program.datasource" />

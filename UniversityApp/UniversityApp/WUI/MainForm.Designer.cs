@@ -31,7 +31,7 @@ namespace UniversityApp.WUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.ctrlViewSchedules = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.ctrlViewStudents = new System.Windows.Forms.Button();
@@ -42,7 +42,7 @@ namespace UniversityApp.WUI
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.ctrlViewSchedules);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.ctrlViewStudents);
@@ -53,14 +53,15 @@ namespace UniversityApp.WUI
             this.panel1.Size = new System.Drawing.Size(200, 573);
             this.panel1.TabIndex = 0;
             // 
-            // button4
+            // ctrlViewSchedules
             // 
-            this.button4.Location = new System.Drawing.Point(0, 290);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 39);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "View Schedules";
-            this.button4.UseVisualStyleBackColor = true;
+            this.ctrlViewSchedules.Location = new System.Drawing.Point(0, 290);
+            this.ctrlViewSchedules.Name = "ctrlViewSchedules";
+            this.ctrlViewSchedules.Size = new System.Drawing.Size(200, 39);
+            this.ctrlViewSchedules.TabIndex = 4;
+            this.ctrlViewSchedules.Text = "View Schedules";
+            this.ctrlViewSchedules.UseVisualStyleBackColor = true;
+            this.ctrlViewSchedules.Click += new System.EventHandler(this.ctrlViewSchedules_Click);
             // 
             // button3
             // 
@@ -118,6 +119,6 @@ namespace UniversityApp.WUI
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button ctrlViewStudents;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button ctrlViewSchedules;
     }
 }

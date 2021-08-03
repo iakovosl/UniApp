@@ -19,8 +19,13 @@ namespace UniversityApp.WUI
 
         private void ctrlViewStudents_Click(object sender, EventArgs e)
         {
-            //Form1 frm = new Form1();
-            //frm.Show();
+            
+        }
+
+        private void ctrlViewSchedules_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+            frm.Show();
         }
     }
 }
