@@ -122,5 +122,30 @@ namespace UniversityApp.Impl
                 CanTeach = new List<CourseCategoryEnum>() { CourseCategoryEnum.Chemistry, CourseCategoryEnum.Financial }
             });
         }
+        public void AddScheduledCourse(Guid courseID, Guid professorID, Guid studentID, DateTime date, string tutorialTime)
+        {
+
+            string professorName = Professors.FirstOrDefault(x => x.ID == professorID).Name;
+            string studentName = Students.FirstOrDefault(x => x.ID == studentID).Name;
+            string courseSubject = Courses.FirstOrDefault(x => x.ID == courseID).Subject;
+            string professorSurname = Professors.FirstOrDefault(x => x.ID == professorID).Surname;
+            string studentSurname = Students.FirstOrDefault(x => x.ID == studentID).Surname;
+
+            Schedule schedule = new Schedule()
+            {
+                ProfessorID = professorID,
+                ProfessorName = professorName,
+                ProfessorSurname = professorSurname,
+                StudentID = studentID,
+                StudentName = studentName,
+                StudentSurname = studentSurname,
+                CourseID = courseID,
+                CourseSubject = courseSubject,
+                CourseTime = tutorialTime,
+                Date = date
+            };
+
+            ScheduledCourses.Add(schedule);
+        }
     }
 }

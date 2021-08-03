@@ -16,5 +16,15 @@ namespace UniversityApp.WUI
         {
             InitializeComponent();
         }
+
+        private void ctrlSchedulesdataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void SchedulesForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
